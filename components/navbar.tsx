@@ -36,7 +36,7 @@ const NavbarDesktop = () => {
 
 export default function Navbar() {
   return (
-    <div className="2xl:container 2xl:left-auto mx-auto fixed w-full left-0 top-0 p-6">
+    <div className="2xl:container 2xl:left-auto mx-auto fixed w-full left-0 top-0 p-6 backdrop-blur-sm">
       <NavbarDesktop />
       <NavbarMobile />
     </div>

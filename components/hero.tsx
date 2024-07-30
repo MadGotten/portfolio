@@ -11,9 +11,9 @@ export default function Hero() {
           Marek Stefaniak
         </h1>
         <div className="flex items-center justify-center gap-2">
-          <h2 className="md:text-3xl sm:text-2xl text-xl font-medium">
+          <p className="md:text-3xl sm:text-2xl text-xl font-medium">
             a backend developer
-          </h2>
+          </p>
           <svg
             className="md:h-10 md:w-10 sm:h-6 sm:w-6 h-5 w-5 shrink-0"
             viewBox="0 0 40 40"
