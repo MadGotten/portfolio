@@ -1,0 +1,35 @@
+export default function Hero() {
+  return (
+    <section className="h-dvh flex flex-col justify-center items-center">
+      <div>
+        <div className="px-1 rounded bg-green text-black w-fit">
+          <p className="md:text-xl sm:text-lg text-base font-medium">
+            Hello I&apos;m
+          </p>
+        </div>
+        <h1 className="md:text-[4rem] sm:text-5xl text-4xl leading-tight font-semibold">
+          Marek Stefaniak
+        </h1>
+        <div className="flex items-center justify-center gap-2">
+          <h2 className="md:text-3xl sm:text-2xl text-xl font-medium">
+            a backend developer
+          </h2>
+          <svg
+            className="md:h-10 md:w-10 sm:h-6 sm:w-6 h-5 w-5 shrink-0"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.6666 30.5L36.6666 20.5L26.6666 10.5M13.3333 10.5L3.33325 20.5L13.3333 30.5"
+              stroke="#F5F5F5"
+              strokeWidth="3.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+  );
+}
