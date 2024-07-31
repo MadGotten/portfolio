@@ -4,7 +4,8 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 const poppins = Poppins({
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal"],
   subsets: ["latin"],
 });
 
