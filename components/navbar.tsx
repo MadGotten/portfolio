@@ -6,10 +6,10 @@ const NavbarDesktop = () => {
   return (
     <div className="sm:flex hidden relative justify-center">
       <nav className="flex gap-6">
-        <Navlink text="About" color="green" />
-        <Navlink text="Projects" color="blue" />
-        <Navlink text="Technology" color="yellow" />
-        <Navlink text="Contact" color="pink" />
+        <Navlink href="#about" text="About" color="green" />
+        <Navlink href="#projects" text="Projects" color="blue" />
+        <Navlink href="#technology" text="Technology" color="yellow" />
+        <Navlink href="#contact" text="Contact" color="pink" />
       </nav>
       <div className="absolute right-0 flex gap-6">
         <button className="underline underline-offset-4 text-base font-medium">

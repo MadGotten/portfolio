@@ -3,7 +3,7 @@ import profilePic from "@/public/Marek.webp";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center gap-8 pt-20">
+    <div id="about" className="flex flex-col items-center gap-8 pt-24">
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
         <span className="px-4 rounded bg-green text-black">About</span> Me
       </h2>

@@ -1,6 +1,9 @@
 export default function Hero() {
   return (
-    <section className="h-dvh flex flex-col justify-center items-center">
+    <section
+      id="home"
+      className="h-dvh flex flex-col justify-center items-center"
+    >
       <div>
         <div className="px-1 rounded bg-green text-black w-fit">
           <p className="md:text-xl sm:text-lg text-base font-medium">

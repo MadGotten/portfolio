@@ -50,10 +50,10 @@ export default function NavbarMobile() {
       </div>
       {isMenuOpen && (
         <nav className="flex flex-col items-center gap-6 p-4">
-          <Navlink text="About" color="green" />
-          <Navlink text="Projects" color="blue" />
-          <Navlink text="Technology" color="yellow" />
-          <Navlink text="Contact" color="pink" />
+          <Navlink href="#about" text="About" color="green" />
+          <Navlink href="#projects" text="Projects" color="blue" />
+          <Navlink href="#technology" text="Technology" color="yellow" />
+          <Navlink href="#contact" text="Contact" color="pink" />
           <div className="flex gap-6">
             <button className="underline underline-offset-4 text-base font-medium">
               PL
