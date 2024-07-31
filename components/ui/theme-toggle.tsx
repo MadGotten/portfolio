@@ -11,12 +11,11 @@ export default function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    return null;
+    return <span className="w-6 h-6"></span>;
   }
-  console.log(theme);
+
   return (
     <button
-      className="outline-none"
       onClick={() => {
         setTheme(theme === "light" ? "dark" : "light");
       }}
