@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Navlink from "./ui/navlink";
+import Link from 'next/link'
 import ThemeToggle from "./ui/theme-toggle";
 
 export default function NavbarMobile() {
@@ -13,7 +14,7 @@ export default function NavbarMobile() {
   return (
     <div className="sm:hidden relative flex flex-col">
       <div className="flex justify-between">
-        <button>
+        <Link href="#home">
           <svg
             width="24"
             height="24"
@@ -29,7 +30,7 @@ export default function NavbarMobile() {
               strokeLinejoin="round"
             />
           </svg>
-        </button>
+        </Link>
         <button onClick={toggleMenu}>
           <svg
             width="24"

@@ -10,15 +10,15 @@ export default function Home() {
     <main className="2xl:container mx-auto px-6 2xl:p-0 relative">
       <Navbar />
       <Hero />
-      <div className="h-[15vh]" />
+      <div className="h-[10vh]" />
       <About />
-      <div className="h-[30vh]" />
+      <div className="h-[20vh]" />
       <Projects />
-      <div className="h-[30vh]" />
+      <div className="h-[20vh]" />
       <Technology />
       <div className="h-[20vh]" />
       <Contact />
-      <div className="h-[25vh]" />
+      <div className="h-[20vh]" />
     </main>
   );
 }

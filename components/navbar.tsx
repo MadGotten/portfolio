@@ -4,7 +4,7 @@ import NavbarMobile from "@/components/navbar-mobile";
 
 const NavbarDesktop = () => {
   return (
-    <div className="sm:flex hidden relative justify-center">
+    <div className="sm:flex hidden relative justify-center z-10">
       <nav className="flex gap-6">
         <Navlink href="#about" text="About" color="green" />
         <Navlink href="#projects" text="Projects" color="blue" />

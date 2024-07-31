@@ -34,12 +34,14 @@ export default function About() {
             </svg>
           </button>
         </div>
-        <Image
-          src={profilePic}
-          height="300"
-          alt="Picture of the portfolio author"
-          className="shadow-[24px_24px_rgb(36,229,102)]"
-        />
+        <div className="lg:h-[400px] lg:w-[314px] h-[300px] w-[236px] min-h-[300px] min-w-[236px]">
+          <Image
+            src={profilePic}
+            height={400}
+            alt="Picture of the portfolio author"
+            className="shadow-[24px_24px_rgb(36,229,102)]"
+          />
+        </div>
       </div>
     </div>
   );
