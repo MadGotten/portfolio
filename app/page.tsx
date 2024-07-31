@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Projects from "@/components/projects";
 import Technology from "@/components/technology";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -11,10 +12,12 @@ export default function Home() {
       <Hero />
       <div className="h-[20vh]" />
       <About />
-      <div className="h-[25vh]" />
+      <div className="h-[30vh]" />
       <Projects />
-      <div className="h-[25vh]" />
+      <div className="h-[30vh]" />
       <Technology />
+      <div className="h-[30vh]" />
+      <Contact />
     </main>
   );
 }
