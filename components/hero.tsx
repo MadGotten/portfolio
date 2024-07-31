@@ -3,6 +3,7 @@ export default function Hero() {
     <section
       id="home"
       className="h-dvh flex flex-col justify-center items-center"
+      data-section
     >
       <div>
         <div className="px-1 rounded bg-green text-black w-fit">

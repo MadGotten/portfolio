@@ -1,6 +1,10 @@
 export default function Projects() {
   return (
-    <div id="projects" className="flex flex-col items-center gap-8 pt-24">
+    <div
+      id="projects"
+      className="flex flex-col items-center gap-8 pt-24"
+      data-section
+    >
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
         <span className="px-4 rounded bg-blue text-black">Projects</span>
       </h2>

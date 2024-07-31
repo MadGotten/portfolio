@@ -1,25 +1,5 @@
-import Navlink from "@/components/ui/navlink";
-import ThemeToggle from "./ui/theme-toggle";
+import NavbarDesktop from "@/components/navbar-desktop";
 import NavbarMobile from "@/components/navbar-mobile";
-
-const NavbarDesktop = () => {
-  return (
-    <div className="sm:flex hidden relative justify-center z-10">
-      <nav className="flex gap-6">
-        <Navlink href="#about" text="About" color="green" />
-        <Navlink href="#projects" text="Projects" color="blue" />
-        <Navlink href="#technology" text="Technology" color="yellow" />
-        <Navlink href="#contact" text="Contact" color="pink" />
-      </nav>
-      <div className="absolute right-0 flex gap-6">
-        <button className="underline underline-offset-4 text-base font-medium">
-          PL
-        </button>
-        <ThemeToggle />
-      </div>
-    </div>
-  );
-};
 
 export default function Navbar() {
   return (

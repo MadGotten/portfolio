@@ -1,6 +1,10 @@
 export default function Technology() {
   return (
-    <div id="technology" className="flex flex-col items-center gap-8 pt-24">
+    <div
+      id="technology"
+      className="flex flex-col items-center gap-8 pt-24"
+      data-section
+    >
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
         <span className="px-4 rounded bg-yellow text-black flex gap-2 items-center">
           Technology
