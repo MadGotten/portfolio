@@ -13,7 +13,7 @@ export default function Technology() {
           >
             <path
               d="M26 4L6 28H24L22 44L42 20H24L26 4Z"
-              stroke="black"
+              className="stroke-black"
               strokeWidth="4"
               strokeLinecap="round"
               strokeLinejoin="round"

@@ -2,28 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: theme("colors.black");
-  --background-start-rgb: theme("colors.white");
-  --background-end-rgb: theme("colors.light");
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: theme("colors.white");
-    --background-start-rgb: theme("colors.black");
-    --background-end-rgb: theme("colors.dark");
-  }
-}
-
 body {
-  color: var(--foreground-rgb);
-  background: linear-gradient(to bottom, transparent, var(--background-end-rgb))
-    var(--background-start-rgb);
+  @apply transition-colors duration-200;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+svg path {
+  @apply transition-colors duration-200;
+}
+
+header {
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+svg:focus {
+  outline: none;
 }

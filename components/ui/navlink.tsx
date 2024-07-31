@@ -14,7 +14,7 @@ export default function Navlink({
   return (
     <a
       href="#"
-      className={`${variant[color]} hover:text-black px-1 rounded font-medium transition-all ease-in-out duration-150 hover:scale-110`}
+      className={`${variant[color]} hover:text-black px-1 rounded font-medium transition-transform ease-in-out duration-150 hover:scale-110`}
     >
       {text}
     </a>

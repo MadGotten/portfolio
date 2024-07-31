@@ -22,7 +22,7 @@ export default function Hero() {
           >
             <path
               d="M26.6666 30.5L36.6666 20.5L26.6666 10.5M13.3333 10.5L3.33325 20.5L13.3333 30.5"
-              stroke="#F5F5F5"
+              className="dark:stroke-white stroke-black"
               strokeWidth="3.5"
               strokeLinecap="round"
               strokeLinejoin="round"
