@@ -1,49 +1,13 @@
-"use client";
-
-import { useState, useEffect, useRef } from "react";
 import Navlink from "@/components/ui/navlink";
 import ThemeToggle from "./ui/theme-toggle";
 
-export default function NavbarDesktop() {
-  const [activeLink, setActiveLink] = useState<string>("");
-  const [scrolling, setScrolling] = useState<boolean>(false);
-  const observer = useRef<IntersectionObserver | null>(null);
-
-  const handleClick = (href: string) => {
-    setActiveLink(href);
-    setScrolling(true);
-    setTimeout(() => {
-      setScrolling(false);
-    }, 600);
-  };
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("[data-section]");
-    observer.current = new IntersectionObserver(
-      (entries) => {
-        if (!scrolling) {
-          const visibleSection = entries.find(
-            (entry) => entry.isIntersecting
-          )?.target;
-          if (visibleSection) {
-            setActiveLink(`#${visibleSection.id}`);
-          }
-        }
-      },
-      { threshold: 0.7 }
-    );
-
-    sections.forEach((section) => {
-      observer.current?.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        observer.current?.unobserve(section);
-      });
-    };
-  }, [scrolling]);
-
+export default function NavbarDesktop({
+  activeLink,
+  handleClick,
+}: {
+  activeLink: string;
+  handleClick: (href: string) => void;
+}) {
   return (
     <div className="sm:flex hidden relative justify-center z-10">
       <nav className="flex gap-6">

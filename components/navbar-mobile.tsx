@@ -1,10 +1,16 @@
 "use client";
 import { useState } from "react";
 import Navlink from "./ui/navlink";
-import Link from 'next/link'
+import Link from "next/link";
 import ThemeToggle from "./ui/theme-toggle";
 
-export default function NavbarMobile() {
+export default function NavbarMobile({
+  activeLink,
+  handleClick,
+}: {
+  activeLink: string;
+  handleClick: (href: string) => void;
+}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -51,10 +57,34 @@ export default function NavbarMobile() {
       </div>
       {isMenuOpen && (
         <nav className="flex flex-col items-center gap-6 p-4">
-          <Navlink href="#about" text="About" color="green" />
-          <Navlink href="#projects" text="Projects" color="blue" />
-          <Navlink href="#technology" text="Technology" color="yellow" />
-          <Navlink href="#contact" text="Contact" color="pink" />
+          <Navlink
+            isActive={activeLink === "#about"}
+            handleClick={() => handleClick("#about")}
+            href="#about"
+            text="About"
+            color="green"
+          />
+          <Navlink
+            isActive={activeLink === "#projects"}
+            handleClick={() => handleClick("#projects")}
+            href="#projects"
+            text="Projects"
+            color="blue"
+          />
+          <Navlink
+            isActive={activeLink === "#technology"}
+            handleClick={() => handleClick("#technology")}
+            href="#technology"
+            text="Technology"
+            color="yellow"
+          />
+          <Navlink
+            isActive={activeLink === "#contact"}
+            handleClick={() => handleClick("#contact")}
+            href="#contact"
+            text="Contact"
+            color="pink"
+          />
           <div className="flex gap-6">
             <button className="underline underline-offset-4 text-base font-medium">
               PL
