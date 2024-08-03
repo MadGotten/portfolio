@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center gap-8 pt-32"
+      className="flex flex-col items-center gap-8 pt-24"
       data-section
     >
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">

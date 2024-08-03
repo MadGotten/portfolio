@@ -4,9 +4,8 @@ import NavbarDesktop from "@/components/navbar-desktop";
 import NavbarMobile from "@/components/navbar-mobile";
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState<string>("");
+  const [activeLink, setActiveLink] = useState<string>("#home");
   const [scrolling, setScrolling] = useState<boolean>(false);
-  const observer = useRef<IntersectionObserver | null>(null);
 
   const handleClick = (href: string) => {
     setActiveLink(href);
@@ -17,32 +16,42 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    const sections = document.querySelectorAll("[data-section]");
-    observer.current = new IntersectionObserver(
-      (entries) => {
-        if (!scrolling) {
-          const visibleSection = entries.find(
-            (entry) => entry.isIntersecting
-          )?.target;
-          if (visibleSection) {
-            setActiveLink(`#${visibleSection.id}`);
-          }
-        }
-      },
-      // threshold is too big for mobile find workaround
-      { threshold: 0.7 }
-    );
+    const handleScroll = () => {
+      if (!scrolling) {
+        const sections = ["home", "about", "projects", "technology", "contact"];
+        const offsets = sections
+          .map((id) => {
+            const section = document.getElementById(id);
+            if (section) {
+              const rect = section.getBoundingClientRect();
+              return {
+                id,
+                top: rect.top,
+                bottom: rect.bottom,
+              };
+            }
+            return;
+          })
+          .filter(Boolean);
 
-    sections.forEach((section) => {
-      observer.current?.observe(section);
-    });
+        const inView = offsets.find(
+          (section) =>
+            section &&
+            section.top <= window.innerHeight / 1.8 &&
+            section.bottom >= window.innerHeight / 1.8
+        );
+        if (inView && activeLink !== `#${inView.id}`) {
+          setActiveLink(`#${inView.id}`);
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      sections.forEach((section) => {
-        observer.current?.unobserve(section);
-      });
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolling]);
+  }, [activeLink, scrolling]);
+
   return (
     <header className="fixed w-full left-0 top-0 backdrop-blur dark:bg-dark dark:bg-opacity-30 bg-white bg-opacity-30">
       <div className="2xl:container 2xl:left-auto mx-auto p-6">

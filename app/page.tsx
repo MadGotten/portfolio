@@ -17,7 +17,7 @@ export default function Home() {
       <Technology />
       <div className="h-[20vh]" />
       <Contact />
-      <div className="h-[20vh]" />
+      <div className="h-[25vh]" />
     </main>
   );
 }
