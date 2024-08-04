@@ -3,11 +3,20 @@ import { useState } from "react";
 import Navlink from "./ui/navlink";
 import Link from "next/link";
 import ThemeToggle from "./ui/theme-toggle";
+import LanguageSwitch from "./ui/language-switch";
 
 export default function NavbarMobile({
+  about,
+  projects,
+  technology,
+  contact,
   activeLink,
   handleClick,
 }: {
+  about: string;
+  projects: string;
+  technology: string;
+  contact: string;
   activeLink: string;
   handleClick: (href: string) => void;
 }) {
@@ -61,34 +70,32 @@ export default function NavbarMobile({
             isActive={activeLink === "#about"}
             handleClick={() => handleClick("#about")}
             href="#about"
-            text="About"
+            text={about}
             color="green"
           />
           <Navlink
             isActive={activeLink === "#projects"}
             handleClick={() => handleClick("#projects")}
             href="#projects"
-            text="Projects"
+            text={projects}
             color="blue"
           />
           <Navlink
             isActive={activeLink === "#technology"}
             handleClick={() => handleClick("#technology")}
             href="#technology"
-            text="Technology"
+            text={technology}
             color="yellow"
           />
           <Navlink
             isActive={activeLink === "#contact"}
             handleClick={() => handleClick("#contact")}
             href="#contact"
-            text="Contact"
+            text={contact}
             color="pink"
           />
           <div className="flex gap-6">
-            <button className="underline underline-offset-4 text-base font-medium">
-              PL
-            </button>
+            <LanguageSwitch />
             <ThemeToggle />
           </div>
         </nav>

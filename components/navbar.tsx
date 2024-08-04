@@ -3,16 +3,32 @@ import { useState, useEffect, useRef } from "react";
 import NavbarDesktop from "@/components/navbar-desktop";
 import NavbarMobile from "@/components/navbar-mobile";
 
-export default function Navbar() {
+export default function Navbar({
+  about,
+  projects,
+  technology,
+  contact,
+}: {
+  about: string;
+  projects: string;
+  technology: string;
+  contact: string;
+}) {
   const [activeLink, setActiveLink] = useState<string>("#home");
   const [scrolling, setScrolling] = useState<boolean>(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | number>(0);
 
   const handleClick = (href: string) => {
     setActiveLink(href);
     setScrolling(true);
-    setTimeout(() => {
+    clearTimeout(timeoutRef.current);
+    const timeoutId = setTimeout(() => {
       setScrolling(false);
     }, 700);
+    timeoutRef.current = timeoutId;
+    return () => {
+      clearTimeout(timeoutId);
+    };
   };
 
   useEffect(() => {
@@ -55,8 +71,22 @@ export default function Navbar() {
   return (
     <header className="fixed w-full left-0 top-0 backdrop-blur dark:bg-dark dark:bg-opacity-30 bg-white bg-opacity-30">
       <div className="2xl:container 2xl:left-auto mx-auto p-6">
-        <NavbarDesktop activeLink={activeLink} handleClick={handleClick} />
-        <NavbarMobile activeLink={activeLink} handleClick={handleClick} />
+        <NavbarDesktop
+          about={about}
+          projects={projects}
+          technology={technology}
+          contact={contact}
+          activeLink={activeLink}
+          handleClick={handleClick}
+        />
+        <NavbarMobile
+          about={about}
+          projects={projects}
+          technology={technology}
+          contact={contact}
+          activeLink={activeLink}
+          handleClick={handleClick}
+        />
       </div>
     </header>
   );

@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const contact = useTranslations("Contact");
   return (
     <div
       id="contact"
@@ -8,11 +10,14 @@ export default function Contact() {
       data-section
     >
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
-        <span className="px-4 rounded bg-pink text-black">Contact</span> Me
+        <span className="px-4 rounded bg-pink text-black">
+          {contact("heading1")}
+        </span>
+        {contact("heading2")}
       </h2>
       <div className="flex flex-col items-center sm:gap-8 gap-6">
         <h4 className="md:text-xl sm:text-lg text-base font-light">
-          Feel free to contact me if you have any questions
+          {contact("text")}
         </h4>
         <div className="flex flex-row gap-8">
           <svg

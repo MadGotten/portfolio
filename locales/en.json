@@ -1,0 +1,35 @@
+{
+  "Nav": {
+    "about": "About",
+    "projects": "Projects",
+    "technology": "Technology",
+    "contact": "Contact"
+  },
+  "Home": {
+    "hello": "Hello, I'm"
+  },
+  "About": {
+    "heading1": "About",
+    "heading2": "Me",
+    "paragraph": "Hello! I’m Marek. I’m a 4th year engineering student in Computer Science at <underscore>Uniwersytet Merito</underscore>. I develop applications in Python and Node.js, primarly focusing on backend. However, I aspire to become a full-stack developer in the future ✨",
+    "download": "Download CV"
+  },
+  "Projects": {
+    "heading": "Projects",
+    "project1-title": "idleparts",
+    "project1-text": "A website for e-commerce shopping including ordering and administration tools",
+    "show-more": "Show more"
+  },
+  "Technology": {
+    "heading": "Technology",
+    "languages": "Languages",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools"
+  },
+  "Contact": {
+    "heading1": "Contact",
+    "heading2": "Me",
+    "text": "Feel free to contact me if you have any questions!"
+  }
+}

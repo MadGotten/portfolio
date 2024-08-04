@@ -1,0 +1,35 @@
+{
+  "Nav": {
+    "about": "O mnie",
+    "projects": "Projekty",
+    "technology": "Technologie",
+    "contact": "Kontakt"
+  },
+  "Home": {
+    "hello": "Cześć, Jestem"
+  },
+  "About": {
+    "heading1": "O mnie",
+    "heading2": "",
+    "paragraph": "Cześć! Jestem Marek. Jestem na 4 roku studiów inżynierskich kierunku Programista na <underscore>Uniwersytecie Merito</underscore>. Tworzę aplikacje w Pythonie oraz Node.js, skupiając się głownie na backendzie, ale w przyszłości chciałbym zostać full-stack developerem ✨",
+    "download": "Pobierz CV"
+  },
+  "Projects": {
+    "heading": "Projekty",
+    "project1-title": "idleparts",
+    "project1-text": "Strona e-commerce części komputerowych. Pozwala na zamawianie oraz zawiera narzędzia administracyjne",
+    "show-more": "Pokaż więcej"
+  },
+  "Technology": {
+    "heading": "Technologie",
+    "languages": "Języki",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Narzędzia"
+  },
+  "Contact": {
+    "heading1": "Kontakt",
+    "heading2": "",
+    "text": "Jeśli masz jakiekolwiek pytania, skontaktuj się ze mną!"
+  }
+}

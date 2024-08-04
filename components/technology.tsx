@@ -1,4 +1,6 @@
+import { useTranslations } from "next-intl";
 export default function Technology() {
+  const technology = useTranslations("Technology");
   return (
     <div
       id="technology"
@@ -7,7 +9,7 @@ export default function Technology() {
     >
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
         <span className="px-4 rounded bg-yellow text-black flex gap-2 items-center">
-          Technology
+          {technology("heading")}
           <svg
             width="48"
             height="48"
@@ -27,7 +29,9 @@ export default function Technology() {
       </h2>
       <div className="flex flex-col justify-start gap-8 w-full sm:w-fit md:text-xl md:font-medium text-lg font-normal">
         <div className="flex flex-col gap-2">
-          <h4 className="md:text-2xl text-xl font-semibold">Languages</h4>
+          <h4 className="md:text-2xl text-xl font-semibold">
+            {technology("languages")}
+          </h4>
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-2">
             <div className="px-5 py-3 border border-light rounded text-center">
               Python
@@ -52,7 +56,7 @@ export default function Technology() {
           </div>
         </div>
         <div className="flex flex-col justify-start gap-2">
-          <h4 className="text-2xl font-semibold">Frontend</h4>
+          <h4 className="text-2xl font-semibold">{technology("frontend")}</h4>
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-2">
             <div className="grid grid-cols-2 gap-2 sm:col-span-2">
               <div className="px-5 py-3 border border-light rounded text-center">
@@ -74,7 +78,7 @@ export default function Technology() {
           </div>
         </div>
         <div className="flex flex-col justify-start gap-2">
-          <h4 className="text-2xl font-semibold">Backend</h4>
+          <h4 className="text-2xl font-semibold">{technology("backend")}</h4>
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-2">
             <div className="grid grid-cols-2 gap-2 sm:col-span-2">
               <div className="px-5 py-3 border border-light rounded text-center">
@@ -107,7 +111,7 @@ export default function Technology() {
           </div>
         </div>
         <div className="flex flex-col justify-start gap-2">
-          <h4 className="text-2xl font-semibold">Tools</h4>
+          <h4 className="text-2xl font-semibold">{technology("tools")}</h4>
           <div className="grid sm:grid-cols-3 grid-cols-2 gap-2">
             <div className="px-5 py-3 border border-light rounded text-center">
               Git

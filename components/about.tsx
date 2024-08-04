@@ -1,7 +1,9 @@
 import Image from "next/image";
 import profilePic from "@/public/Marek.webp";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const about = useTranslations("About");
   return (
     <div
       id="about"
@@ -9,18 +11,20 @@ export default function About() {
       data-section
     >
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
-        <span className="px-4 rounded bg-green text-black">About</span> Me
+        <span className="px-4 rounded bg-green text-black">
+          {about("heading1")}
+        </span>
+        {about("heading2")}
       </h2>
       <div className="flex md:flex-row flex-col items-center gap-6">
         <div className="flex gap-4 flex-col items-center md:items-start">
           <p className="sm:text-xl text-base font-light leading-normal max-w-[580px]">
-            Hello! I&apos;m Marek. I’m a 4th year engineering student in
-            Computer Science at Uniwersytet Merito. I develop applications in
-            Python and Node.js, primarly focusing on backend. However, I aspire
-            to become a full-stack developer in the future ✨
+            {about.rich("paragraph", {
+              underscore: (chunks) => <u>{chunks}</u>,
+            })}
           </p>
           <button className="flex bg-green gap-1 p-2 text-black rounded text-base w-fit">
-            Download CV{" "}
+            {about("download")}
             <svg
               width="20"
               height="20"

@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl";
+
 export default function Hero() {
+  const home = useTranslations("Home");
+  //Hello I&apos;m
   return (
     <section
       id="home"
@@ -8,7 +12,7 @@ export default function Hero() {
       <div>
         <div className="px-1 rounded bg-green text-black w-fit">
           <p className="md:text-xl sm:text-lg text-base font-medium">
-            Hello I&apos;m
+            {home("hello")}
           </p>
         </div>
         <h1 className="md:text-[4rem] sm:text-5xl text-4xl leading-tight font-semibold">
@@ -16,7 +20,7 @@ export default function Hero() {
         </h1>
         <div className="flex items-center justify-center gap-2">
           <p className="md:text-3xl sm:text-2xl text-xl font-medium">
-            a backend developer
+            backend developer
           </p>
           <svg
             className="md:h-10 md:w-10 sm:h-6 sm:w-6 h-5 w-5 shrink-0"
