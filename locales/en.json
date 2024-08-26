@@ -11,7 +11,7 @@
   "About": {
     "heading1": "About",
     "heading2": "Me",
-    "paragraph": "Hello! I’m Marek. I’m a 4th year engineering student in Computer Science at <underscore>Uniwersytet Merito</underscore>. I develop applications in Python and Node.js, primarly focusing on backend. However, I aspire to become a full-stack developer in the future ✨",
+    "paragraph": "Hello! I’m Marek. I’m a 4th-year engineering student majoring in Computer Science at <underscore>Uniwersytet Merito</underscore>. I develop applications in Python and Node.js, primarily focusing on backend development. However, I aspire to become a full-stack developer in the future ✨",
     "download": "Download CV"
   },
   "Projects": {
