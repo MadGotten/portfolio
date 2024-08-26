@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config: Config = {
   content: [
@@ -7,6 +8,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xs: "375px",
+      ...defaultTheme.screens,
+    },
     container: {
       center: true,
     },
@@ -19,6 +24,7 @@ const config: Config = {
       light: "#EAE2E2",
       green: "#24E566",
       blue: "#3097F7",
+      "dark-blue": "#0871d2",
       yellow: "#FAE15E",
       pink: "#E8BAEF",
     },

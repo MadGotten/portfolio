@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 
 export default function Hero() {
   const home = useTranslations("Home");
-  //Hello I&apos;m
+
   return (
     <section
       id="home"
