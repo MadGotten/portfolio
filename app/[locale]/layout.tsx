@@ -12,6 +12,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Marek Stefaniak",
+  icons: {
+    icon: "/favicon.ico",
+  },
   description: "Portfolio website by Marek Stefaniak",
 };
 
