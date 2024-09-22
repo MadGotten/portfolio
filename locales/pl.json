@@ -16,8 +16,21 @@
   },
   "Projects": {
     "heading": "Projekty",
-    "project1-title": "idleparts",
-    "project1-text": "Strona e-commerce części komputerowych. Pozwala na zamawianie oraz zawiera narzędzia administracyjne",
+    "idleparts": {
+      "title": "Idleparts",
+      "body": "Strona e-commerce części komputerowych. Pozwala na zamawianie oraz zawiera narzędzia administracyjnes",
+      "imageAlt": "Screenshot of idleparts project"
+    },
+    "social-life": {
+      "title": "Social Life",
+      "body": "Platforma mediów społecznościowych, która umożliwia użytkownikom udostępnianie postów, komentowanie i lajkowanie ich. Możesz także obserwować innych użytkowników i być na bieżąco z ich aktywnością.",
+      "imageAlt": "Image of Social Life website"
+    },
+    "eventio": {
+      "title": "Eventio",
+      "body": "Strona do zarządzania wydarzeniami, która umożliwia rejestrację lub zakup biletów. Twórcy wydarzeń mogą określić, czy ich wydarzenie jest bezpłatne, czy płatne.",
+      "imageAlt": "Image of Eventio website"
+    },
     "show-more": "Pokaż więcej"
   },
   "Technology": {

@@ -16,8 +16,21 @@
   },
   "Projects": {
     "heading": "Projects",
-    "project1-title": "idleparts",
-    "project1-text": "A website for e-commerce shopping including ordering and administration tools",
+    "idleparts": {
+      "title": "Idleparts",
+      "body": "A website for e-commerce shopping including ordering and administration tools",
+      "imageAlt": "Image of Idleparts website"
+    },
+    "social-life": {
+      "title": "Social Life",
+      "body": "A social media platform, that allows users to share posts, comment and like them. also you can follow other users and be updated.",
+      "imageAlt": "Image of Social Life website"
+    },
+    "eventio": {
+      "title": "Eventio",
+      "body": "An event management website that allows people to register or buy tickets. Event creators can specify if their event is free or paid.",
+      "imageAlt": "Image of Eventio website"
+    },
     "show-more": "Show more"
   },
   "Technology": {
