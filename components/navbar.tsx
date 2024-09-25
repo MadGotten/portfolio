@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import NavbarDesktop from "@/components/navbar-desktop";
-import NavbarMobile from "@/components/navbar-mobile";
+import NavbarDesktop from "@/components/navbar/navbar-desktop";
+import NavbarMobile from "@/components/navbar/navbar-mobile";
 
 export default function Navbar({
   about,

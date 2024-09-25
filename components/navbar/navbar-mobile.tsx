@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import Navlink from "./ui/navlink";
+import Navlink from "../ui/navlink";
 import Link from "next/link";
-import ThemeToggle from "./ui/theme-toggle";
-import LanguageSwitch from "./ui/language-switch";
+import ThemeToggle from "../ui/theme-toggle";
+import LanguageSwitch from "../ui/language-switch";
 
 export default function NavbarMobile({
   about,

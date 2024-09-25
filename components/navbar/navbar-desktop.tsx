@@ -1,6 +1,6 @@
 import Navlink from "@/components/ui/navlink";
-import ThemeToggle from "./ui/theme-toggle";
-import LanguageSwitch from "./ui/language-switch";
+import ThemeToggle from "../ui/theme-toggle";
+import LanguageSwitch from "../ui/language-switch";
 
 export default function NavbarDesktop({
   about,
