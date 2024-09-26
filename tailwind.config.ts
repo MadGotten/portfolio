@@ -8,6 +8,18 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      keyframes: {
+        appear: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+      },
+    },
     screens: {
       xs: "375px",
       ...defaultTheme.screens,
@@ -23,7 +35,9 @@ const config: Config = {
       dark: "#121212",
       light: "#EAE2E2",
       green: "#24E566",
+      "dark-green": "#22c55e",
       blue: "#3097F7",
+      "lightdark-blue": "#3b82f6",
       "dark-blue": "#0871d2",
       yellow: "#FAE15E",
       pink: "#E8BAEF",

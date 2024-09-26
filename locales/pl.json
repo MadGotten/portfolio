@@ -31,7 +31,8 @@
       "body": "Strona do zarządzania wydarzeniami, która umożliwia rejestrację lub zakup biletów. Twórcy wydarzeń mogą określić, czy ich wydarzenie jest bezpłatne, czy płatne.",
       "imageAlt": "Image of Eventio website"
     },
-    "show-more": "Pokaż więcej"
+    "show-more": "Pokaż więcej",
+    "alert-text": "Aktualnie nie ma więcej projektów 😭"
   },
   "Technology": {
     "heading": "Technologie",

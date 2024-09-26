@@ -31,7 +31,8 @@
       "body": "An event management website that allows people to register or buy tickets. Event creators can specify if their event is free or paid.",
       "imageAlt": "Image of Eventio website"
     },
-    "show-more": "Show more"
+    "show-more": "Show more",
+    "alert-text": "Currently no more projects 😭"
   },
   "Technology": {
     "heading": "Technology",
