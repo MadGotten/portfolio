@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="h-dvh flex flex-col justify-center items-center"
+      className="h-svh flex flex-col justify-center items-center"
       data-section
     >
       <div>
