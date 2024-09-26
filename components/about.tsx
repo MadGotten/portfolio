@@ -23,7 +23,7 @@ export default function About() {
               underscore: (chunks) => <u>{chunks}</u>,
             })}
           </p>
-          <button className="flex bg-green gap-1 p-2 text-black rounded text-base w-fit">
+          <button className="flex bg-green hover:bg-dark-green transition-colors gap-1 p-2 text-black rounded text-base w-fit">
             {about("download")}
             <svg
               width="20"

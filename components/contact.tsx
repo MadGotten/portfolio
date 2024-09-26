@@ -20,8 +20,14 @@ export default function Contact() {
           {contact("text")}
         </h4>
         <div className="flex flex-row gap-8">
+          <Link
+            href="https://www.linkedin.com/in/marek-stefaniak-288888207/"
+            target="_blank"
+            className="hover:scale-105 transition-transform"
+            rel="noopener noreferrer"
+          >
           <svg
-            className="sm:w-12 sm:h-12 w-10 h-10"
+            className="sm:w-12 sm:h-12 w-10 h-10 hover:scale-105 transition-transform"
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -48,9 +54,11 @@ export default function Contact() {
               strokeLinejoin="round"
             />
           </svg>
+          </Link>
           <Link
             href="https://github.com/MadGotten"
             target="_blank"
+            className="hover:scale-105 transition-transform"
             rel="noopener noreferrer"
           >
             <svg
@@ -75,7 +83,7 @@ export default function Contact() {
               </defs>
             </svg>
           </Link>
-          <Link href="mailto:marekstefaniak16@gmail.com">
+          <Link href="mailto:marekstefaniak16@gmail.com" className="hover:scale-105 transition-transform">
             <svg
               className="sm:w-12 sm:h-12 w-10 h-10"
               viewBox="0 0 48 48"
