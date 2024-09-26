@@ -42,7 +42,7 @@ export default function About() {
             </svg>
           </button>
         </div>
-        <div className="lg:h-[400px] lg:w-[300px] h-[300px] w-[236px] min-h-[300px] min-w-[236px]">
+        <div className="lg:h-[400px] lg:w-[300px] lg:max-h-[400px] lg:max-w-[300px] max-h-[300px] max-w-[236px] xs:h-[300px] xs:w-[236px] xs:min-h-[300px] xs:min-w-[236px] mr-6 lg:mr-0">
           <Image
             src={profilePic}
             height={400}

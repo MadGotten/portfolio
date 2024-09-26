@@ -15,7 +15,7 @@ export default function Home({
   unstable_setRequestLocale(locale);
   const nav = useTranslations("Nav");
   return (
-    <main className="2xl:container mx-auto px-4 sm:px-6 2xl:p-0 relative">
+    <main className="2xl:container mx-auto px-6 2xl:p-0 relative">
       <Navbar
         about={nav("about")}
         projects={nav("projects")}
