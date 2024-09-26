@@ -40,6 +40,7 @@ const config: Config = {
       "lightdark-blue": "#3b82f6",
       "dark-blue": "#0871d2",
       yellow: "#FAE15E",
+      orange: "#f5a524",
       pink: "#E8BAEF",
     },
   },

@@ -32,10 +32,6 @@ export default function Projects() {
     },
   ];
 
-  const loadProjects = () => {
-    console.log("Loading");
-  };
-
   return (
     <div
       id="projects"
@@ -49,8 +45,18 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex gap-4 p-4 flex-col justify-between border border-light w-[362px] rounded-lg"
+            className="flex gap-4 p-4 flex-col justify-between border border-light w-[362px] rounded-lg relative"
           >
+            <div className="absolute -top-4 -right-4">
+              <div className="relative group flex justify-end items-center gap-2">
+                <div className="-left-8 top-0 bg-orange text-black w-fit text-nowrap text-sm px-2 leading-loose rounded-[10px] pointer-events-none select-none opacity-0 group-hover:opacity-100 transition-opacity">
+                  {t("tooltip-hosting")}
+                </div>
+                <button className="w-8 h-8 rounded-full bg-orange text-black flex justify-center items-center">
+                  <span className="font-medium select-none">!</span>
+                </button>
+              </div>
+            </div>
             <div className="flex gap-2 flex-col">
               <Link href={project.website} target="_blank">
                 <Image

@@ -32,6 +32,7 @@
       "imageAlt": "Image of Eventio website"
     },
     "show-more": "Show more",
+    "tooltip-hosting": "Hosting might spin up to 1 min.",
     "alert-text": "Currently no more projects 😭"
   },
   "Technology": {
