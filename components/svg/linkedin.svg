@@ -1,0 +1,9 @@
+<svg className="sm:w-12 sm:h-12 w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M32 16a12 12 0 0 1 12 12v14h-8V28a4 4 0 1 0-8 0v14h-8V28a12 12 0 0 1 12-12m-20 2H4v24h8zm-4-6a4 4 0 1 0 0-8 4 4 0 0 0 0 8"
+    className="dark:stroke-white stroke-black"
+    strokeWidth="4"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+</svg>

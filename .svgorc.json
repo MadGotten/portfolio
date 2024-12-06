@@ -1,0 +1,14 @@
+{
+  "pretty": true,
+  "indent": 2,
+  "plugins": [
+    {
+      "name": "removeUselessStrokeAndFill",
+      "params": {
+        "stroke": false,
+        "fill": false,
+        "removeNone": false
+      }
+    }
+  ]
+}
