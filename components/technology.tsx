@@ -2,11 +2,7 @@ import { useTranslations } from "next-intl";
 export default function Technology() {
   const technology = useTranslations("Technology");
   return (
-    <div
-      id="technology"
-      className="flex flex-col items-center gap-8 pt-24"
-      data-section
-    >
+    <div id="technology" className="flex flex-col items-center gap-8 pt-24" data-section>
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
         <span className="px-4 rounded bg-yellow text-black flex gap-2 items-center">
           {technology("heading")}
@@ -29,17 +25,10 @@ export default function Technology() {
       </h2>
       <div className="flex flex-col justify-start gap-8 w-full sm:w-fit md:text-xl md:font-medium xs:text-lg text-base font-normal">
         <div className="flex flex-col gap-2">
-          <h4 className="md:text-2xl text-xl font-semibold">
-            {technology("languages")}
-          </h4>
+          <h4 className="md:text-2xl text-xl font-semibold">{technology("languages")}</h4>
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-2">
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <linearGradient
                   id="python-original-a"
                   gradientUnits="userSpaceOnUse"
@@ -82,11 +71,7 @@ export default function Technology() {
                   gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop
-                    offset="0"
-                    stopColor="#B8B8B8"
-                    stopOpacity=".498"
-                  ></stop>
+                  <stop offset="0" stopColor="#B8B8B8" stopOpacity=".498"></stop>
                   <stop offset="1" stopColor="#7F7F7F" stopOpacity="0"></stop>
                 </radialGradient>
                 <path
@@ -98,12 +83,7 @@ export default function Technology() {
               Python
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   fill="#F0DB4F"
                   d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"
@@ -112,12 +92,7 @@ export default function Technology() {
               Javascript
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   fill="url(#a)"
                   d="M0 64c0 18.593 28.654 33.667 64 33.667 35.346 0 64-15.074 64-33.667 0-18.593-28.655-33.667-64-33.667C28.654 30.333 0 45.407 0 64Z"
@@ -161,12 +136,7 @@ export default function Technology() {
             </div>
             <div className="grid grid-cols-1 gap-2 xs:grid-cols-2 sm:col-span-2">
               <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 128 128"
-                  className="flex-shrink-0"
-                >
+                <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                   <path
                     fill="#E44D26"
                     d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm89.126 26.539l-.627 7.172L97.255 39H44.59l1.257 14h50.156l-.336 3.471-3.233 36.119-.238 2.27L64 102.609v.002l-.034.018-28.177-7.423L33.876 74h13.815l.979 10.919L63.957 89H64v-.546l15.355-3.875L80.959 67H33.261l-3.383-38.117L29.549 25h68.939l-.33 3.539z"
@@ -175,12 +145,7 @@ export default function Technology() {
                 HTML
               </div>
               <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 128 128"
-                  className="flex-shrink-0"
-                >
+                <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                   <path
                     fill="#1572B6"
                     d="M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626L119.24 1H8.76zm89.591 25.862l-3.347 37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336L64 101.607v.001l-.022.019-28.311-7.888L33.75 72h13.883l.985 11.054 15.386 4.17-.004.008v-.002l15.443-4.229L81.075 65H48.792l-.277-3.043-.631-7.129L47.553 51h34.749l1.264-14H30.64l-.277-3.041-.63-7.131L29.401 23h69.281l-.331 3.862z"
@@ -190,12 +155,7 @@ export default function Technology() {
               </div>
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   style={{
                     stroke: "none",
@@ -249,12 +209,7 @@ export default function Technology() {
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-2">
             <div className="grid grid-cols-1 gap-2 xs:grid-cols-2 sm:col-span-2">
               <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 128 128"
-                  className="flex-shrink-0"
-                >
+                <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                   <g fill="#61DAFB">
                     <circle cx="64" cy="64" r="11.4"></circle>
                     <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path>
@@ -263,21 +218,13 @@ export default function Technology() {
                 React
               </div>
               <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 128 128"
-                  className="flex-shrink-0"
-                >
+                <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                   <circle cx="64" cy="64" r="64"></circle>
                   <path
                     fill="url(#next-a)"
                     d="M106.317 112.014 49.167 38.4H38.4v51.179h8.614v-40.24l52.54 67.884a64.216 64.216 0 0 0 6.763-5.209z"
                   ></path>
-                  <path
-                    fill="url(#next-b)"
-                    d="M81.778 38.4h8.533v51.2h-8.533z"
-                  ></path>
+                  <path fill="url(#next-b)" d="M81.778 38.4h8.533v51.2h-8.533z"></path>
                   <defs>
                     <linearGradient
                       id="next-a"
@@ -309,12 +256,7 @@ export default function Technology() {
               </div>
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
                   fill="#38bdf8"
@@ -323,12 +265,7 @@ export default function Technology() {
               TailwindCSS
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <defs>
                   <linearGradient
                     id="bts-a"
@@ -363,10 +300,7 @@ export default function Technology() {
                     colorInterpolationFilters="sRGB"
                     filterUnits="userSpaceOnUse"
                   >
-                    <feFlood
-                      floodOpacity="0"
-                      result="BackgroundImageFix"
-                    ></feFlood>
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
                     <feColorMatrix
                       in="SourceAlpha"
                       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -374,15 +308,8 @@ export default function Technology() {
                     <feOffset dy="4"></feOffset>
                     <feGaussianBlur stdDeviation="8"></feGaussianBlur>
                     <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-                    <feBlend
-                      in2="BackgroundImageFix"
-                      result="effect1_dropShadow"
-                    ></feBlend>
-                    <feBlend
-                      in="SourceGraphic"
-                      in2="effect1_dropShadow"
-                      result="shape"
-                    ></feBlend>
+                    <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                    <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
                   </filter>
                 </defs>
                 <path
@@ -399,12 +326,7 @@ export default function Technology() {
               Bootstrap
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -456,12 +378,7 @@ export default function Technology() {
               Express.js
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   fill="#f0513f"
                   d="M27.271.11c-.2.078-5.82 3.28-12.487 7.112-8.078 4.644-12.227 7.09-12.449 7.32-.19.225-.34.482-.438.76-.167.564-.179 82.985-.01 83.578.061.23.26.568.44.754.436.46 48.664 28.19 49.25 28.324.272.065.577.054.88-.03.658-.165 48.76-27.834 49.188-28.286.175-.195.375-.532.44-.761.084-.273.115-4.58.115-13.655v-13.26l11.726-6.735c11.056-6.357 11.733-6.755 12.017-7.191l.29-.47V43.287c0-15.548.03-14.673-.585-15.235-.165-.146-5.798-3.433-12.53-7.31L100.89 13.71h-1.359l-11.963 6.87c-6.586 3.788-12.184 7.027-12.457 7.203-.272.18-.597.512-.73.753l-.242.417-.054 13.455-.048 13.46-9.879 5.69c-5.434 3.124-9.957 5.71-10.053 5.734-.175.049-.187-1.232-.187-25.966V15.293l-.26-.447c-.326-.545 1.136.324-13.544-8.114C27.803-.348 28.098-.2 27.27.11zm11.317 10.307c5.15 2.955 9.364 5.4 9.364 5.43 0 .031-4.516 2.641-10.035 5.813l-10.041 5.765-10.023-5.764c-5.507-3.173-10.02-5.783-10.02-5.814 0-.03 4.505-2.64 10.013-5.805l9.999-5.752.69.376c3.357 1.907 6.708 3.824 10.053 5.751zm71.668 13.261c5.422 3.122 9.908 5.702 9.95 5.744.114.103-19.774 11.535-20.046 11.523-.272-.008-19.915-11.335-19.907-11.473.01-.157 19.773-11.527 19.973-11.496.091.022 4.607 2.59 10.03 5.702zM16.3 25.328l9.558 5.503.055 27.247.05 27.252.233.368c.122.194.352.459.52.581.158.115 5.477 3.146 11.818 6.724l11.52 6.506v11.527c0 6.326-.043 11.516-.097 11.516-.041 0-10-5.699-22.124-12.676L5.793 97.201l-.03-38.966-.019-38.954.49.271c.283.15 4.807 2.748 10.065 5.775zm33.754 19.18v25.109l-.387.253c-.525.332-19.667 11.335-19.732 11.335-.03 0-.054-11.336-.054-25.193l.012-25.182 10-5.752c5.499-3.165 10.034-5.733 10.088-5.714.039.024.073 11.34.073 25.144zm38.15-5.775 10.023 5.763V55.92c0 10.838-.011 11.42-.176 11.357-.107-.041-4.642-2.64-10.083-5.774l-9.91-5.69v-11.42c0-6.287.032-11.424.062-11.424.043 0 4.577 2.592 10.084 5.764zm34.164 5.587c0 6.254-.042 11.412-.084 11.462-.072.115-19.896 11.538-20.022 11.538-.031 0-.062-5.135-.062-11.423v-11.42l10-5.756c5.507-3.16 10.042-5.752 10.084-5.752.053 0 .084 5.105.084 11.351zM95.993 70.933 52.005 96.04 32.056 84.693S76 59.277 76.176 59.343zm2.215 14.827-.034 11.442-22.028 12.676c-12.12 6.976-22.082 12.675-22.132 12.675-.053 0-.095-4.658-.095-11.516V99.51l22.08-12.592c12.132-6.923 22.101-12.59 22.154-12.602.043 0 .062 5.148.054 11.443z"
@@ -471,12 +388,7 @@ export default function Technology() {
             </div>
             <div className="grid grid-cols-1 gap-2 xs:grid-cols-2 sm:col-span-2">
               <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-2 sm:gap-4 w-full">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 128 128"
-                  className="flex-shrink-0"
-                >
+                <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                   <path
                     fill="#00618A"
                     d="M0 91.313h4.242V74.566l6.566 14.598c.773 1.77 1.832 2.391 3.914 2.391s3.098-.621 3.871-2.391l6.566-14.598v16.746h4.242V74.594c0-1.633-.652-2.422-2-2.828-3.223-1.004-5.383-.137-6.363 2.039l-6.441 14.41-6.238-14.41c-.937-2.176-3.14-3.043-6.359-2.039-1.348.406-2 1.195-2 2.828zM32.93 77.68h4.238v9.227c-.039.5.16 1.676 2.484 1.715h9.223V77.633h4.25c.02 0-.008 14.984-.008 15.047.023 3.695-4.582 4.496-6.707 4.559H33.02v-2.852l13.414-.004c2.73-.285 2.406-1.645 2.406-2.098v-1.113h-9.012c-4.195-.039-6.863-1.871-6.898-3.977-.004-.191.09-9.422 0-9.516zm0 0"
@@ -493,12 +405,7 @@ export default function Technology() {
                 MySQL
               </div>
               <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-2 sm:gap-4">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 128 128"
-                  className="flex-shrink-0"
-                >
+                <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                   <path d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.652-14.709 4.402 0 0-44.683-18.409-42.604 23.151.442 8.841 12.672 66.898 27.26 49.362 5.332-6.412 10.484-11.834 10.484-11.834 2.558 1.699 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.044 1.575.099 2.497-3.757 4.199-2.653 4.936-10.166 6.482-7.602 1.566-3.136 4.355-.221 5.084 3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69.209 5.214.558 10.079 1.621 12.948 1.063 2.868 2.317 10.256 12.191 8.14 8.252-1.764 14.561-4.309 15.136-27.985"></path>
                   <path d="M75.458 125.256c-4.367 0-7.211-1.689-8.938-3.32-2.607-2.46-3.641-5.629-4.259-7.522l-.267-.79c-1.244-3.358-1.666-8.193-1.916-14.419-.038-.935-.064-1.898-.093-2.919-.021-.747-.047-1.684-.085-2.664a18.8 18.8 0 01-4.962 1.568c-3.079.526-6.389.356-9.84-.507-2.435-.609-4.965-1.871-6.407-3.82-4.203 3.681-8.212 3.182-10.396 2.453-3.853-1.285-7.301-4.896-10.542-11.037-2.309-4.375-4.542-10.075-6.638-16.943-3.65-11.96-5.969-24.557-6.175-28.693C4.292 23.698 7.777 14.44 15.296 9.129 27.157.751 45.128 5.678 51.68 7.915c4.402-2.653 9.581-3.944 15.433-3.851 3.143.051 6.136.327 8.916.823 2.9-.912 8.628-2.221 15.185-2.139 12.081.144 22.092 4.852 28.949 13.615 4.894 6.252 2.474 19.381.597 26.651-2.642 10.226-7.271 21.102-12.957 30.57 1.544.011 3.781-.174 6.961-.831 6.274-1.295 8.109 2.069 8.607 3.575 1.995 6.042-6.677 10.608-9.382 11.864-3.466 1.609-9.117 2.589-13.745 2.377l-.202-.013-1.216-.107-.12 1.014-.116.991c-.311 11.999-2.025 19.598-5.552 24.619-3.697 5.264-8.835 6.739-13.361 7.709-1.544.33-2.947.474-4.219.474zm-9.19-43.671c2.819 2.256 3.066 6.501 3.287 14.434.028.99.054 1.927.089 2.802.106 2.65.355 8.855 1.327 11.477.137.371.26.747.39 1.146 1.083 3.316 1.626 4.979 6.309 3.978 3.931-.843 5.952-1.599 7.534-3.851 2.299-3.274 3.585-9.86 3.821-19.575l4.783.116-4.75-.57.14-1.186c.455-3.91.783-6.734 3.396-8.602 2.097-1.498 4.486-1.353 6.389-1.01-2.091-1.58-2.669-3.433-2.823-4.193l-.399-1.965 1.121-1.663c6.457-9.58 11.781-21.354 14.609-32.304 2.906-11.251 2.02-17.226 1.134-18.356-11.729-14.987-32.068-8.799-34.192-8.097l-.359.194-1.8.335-.922-.191c-2.542-.528-5.366-.82-8.393-.869-4.756-.08-8.593 1.044-11.739 3.431l-2.183 1.655-2.533-1.043c-5.412-2.213-21.308-6.662-29.696-.721-4.656 3.298-6.777 9.76-6.305 19.207.156 3.119 2.275 14.926 5.771 26.377 4.831 15.825 9.221 21.082 11.054 21.693.32.108 1.15-.537 1.976-1.529a270.708 270.708 0 0110.694-12.07l2.77-2.915 3.349 2.225c1.35.897 2.839 1.406 4.368 1.502l7.987-6.812-1.157 11.808c-.026.265-.039.626.065 1.296l.348 2.238-1.51 1.688-.174.196 4.388 2.025 1.836-2.301z"></path>
                   <path
@@ -514,12 +421,7 @@ export default function Technology() {
               </div>
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -530,20 +432,12 @@ export default function Technology() {
               MongoDB
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   fill="#ffa000"
                   d="M17.474 103.276 33.229 2.462a2.91 2.91 0 0 1 5.44-.924l16.294 30.39 6.494-12.366a2.91 2.91 0 0 1 5.15 0l43.97 83.714H17.474Z"
                 ></path>
-                <path
-                  fill="#f57c00"
-                  d="M71.903 64.005 54.955 31.913l-37.481 71.363Z"
-                ></path>
+                <path fill="#f57c00" d="M71.903 64.005 54.955 31.913l-37.481 71.363Z"></path>
                 <path
                   fill="#ffca28"
                   d="M110.577 103.276 98.51 28.604a2.913 2.913 0 0 0-1.984-2.286 2.906 2.906 0 0 0-2.94.714l-76.112 76.243 42.115 23.618a8.728 8.728 0 0 0 8.51 0l42.478-23.618Z"
@@ -567,12 +461,7 @@ export default function Technology() {
           <h4 className="text-2xl font-semibold">{technology("tools")}</h4>
           <div className="grid grid-cols-1 gap-2 xs:grid-cols-2 sm:col-span-2">
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   fill="#F34F29"
                   d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"
@@ -581,12 +470,7 @@ export default function Technology() {
               Git
             </div>
             <div className="px-4 sm:px-5 py-3 sm:py-4 border border-dark dark:border-light rounded text-center flex items-center justify-center sm:justify-start gap-2 sm:gap-4">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 128 128"
-                className="flex-shrink-0"
-              >
+              <svg width="28" height="28" viewBox="0 0 128 128" className="flex-shrink-0">
                 <path
                   d="M124.8 52.1c-4.3-2.5-10-2.8-14.8-1.4-.6-5.2-4-9.7-8-12.9l-1.6-1.3-1.4 1.6c-2.7 3.1-3.5 8.3-3.1 12.3.3 2.9 1.2 5.9 3 8.3-1.4.8-2.9 1.9-4.3 2.4-2.8 1-5.9 2-8.9 2H79V49H66V24H51v12H26v13H13v14H1.8l-.2 1.5c-.5 6.4.3 12.6 3 18.5l1.1 2.2.1.2c7.9 13.4 21.7 19 36.8 19 29.2 0 53.3-13.1 64.3-40.6 7.4.4 15-1.8 18.6-8.9l.9-1.8-1.6-1zM28 39h10v11H28V39zm13.1 44.2c0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7.1 3.1 1.4 3.1 3.1zM28 52h10v11H28V52zm-13 0h11v11H15V52zm27.7 50.2c-15.8-.1-24.3-5.4-31.3-12.4 2.1.1 4.1.2 5.9.2 1.6 0 3.2 0 4.7-.1 3.9-.2 7.3-.7 10.1-1.5 2.3 5.3 6.5 10.2 14 13.8h-3.4zM51 63H40V52h11v11zm0-13H40V39h11v11zm13 13H53V52h11v11zm0-13H53V39h11v11zm0-13H53V26h11v11zm13 26H66V52h11v11zM38.8 81.2c-.2-.1-.5-.2-.8-.2-1.2 0-2.2 1-2.2 2.2 0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2c0-.3-.1-.6-.2-.8-.2.3-.4.5-.8.5-.5 0-.9-.4-.9-.9.1-.4.3-.7.5-.8z"
                   fill="#019BC6"

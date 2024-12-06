@@ -4,21 +4,13 @@ import { useTranslations } from "next-intl";
 export default function Contact() {
   const contact = useTranslations("Contact");
   return (
-    <div
-      id="contact"
-      className="flex flex-col items-center sm:gap-8 gap-6 pt-24"
-      data-section
-    >
+    <div id="contact" className="flex flex-col items-center sm:gap-8 gap-6 pt-24" data-section>
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
-        <span className="px-4 rounded bg-pink text-black">
-          {contact("heading1")}
-        </span>
+        <span className="px-4 rounded bg-pink text-black">{contact("heading1")}</span>
         {contact("heading2")}
       </h2>
       <div className="flex flex-col items-center sm:gap-8 gap-6">
-        <h4 className="md:text-xl sm:text-lg text-base font-light">
-          {contact("text")}
-        </h4>
+        <h4 className="md:text-xl sm:text-lg text-base font-light">{contact("text")}</h4>
         <div className="flex flex-row gap-8">
           <Link
             href="https://www.linkedin.com/in/marek-stefaniak-288888207/"
@@ -26,34 +18,34 @@ export default function Contact() {
             className="hover:scale-105 transition-transform"
             rel="noopener noreferrer"
           >
-          <svg
-            className="sm:w-12 sm:h-12 w-10 h-10 hover:scale-105 transition-transform"
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M32 16C35.1826 16 38.2348 17.2643 40.4853 19.5147C42.7357 21.7652 44 24.8174 44 28V42H36V28C36 26.9391 35.5786 25.9217 34.8284 25.1716C34.0783 24.4214 33.0609 24 32 24C30.9391 24 29.9217 24.4214 29.1716 25.1716C28.4214 25.9217 28 26.9391 28 28V42H20V28C20 24.8174 21.2643 21.7652 23.5147 19.5147C25.7652 17.2643 28.8174 16 32 16Z"
-              className="dark:stroke-white stroke-black"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M12 18H4V42H12V18Z"
-              className="dark:stroke-white stroke-black"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z"
-              className="dark:stroke-white stroke-black"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+            <svg
+              className="sm:w-12 sm:h-12 w-10 h-10 hover:scale-105 transition-transform"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 16C35.1826 16 38.2348 17.2643 40.4853 19.5147C42.7357 21.7652 44 24.8174 44 28V42H36V28C36 26.9391 35.5786 25.9217 34.8284 25.1716C34.0783 24.4214 33.0609 24 32 24C30.9391 24 29.9217 24.4214 29.1716 25.1716C28.4214 25.9217 28 26.9391 28 28V42H20V28C20 24.8174 21.2643 21.7652 23.5147 19.5147C25.7652 17.2643 28.8174 16 32 16Z"
+                className="dark:stroke-white stroke-black"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M12 18H4V42H12V18Z"
+                className="dark:stroke-white stroke-black"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z"
+                className="dark:stroke-white stroke-black"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </Link>
           <Link
             href="https://github.com/MadGotten"
@@ -83,7 +75,10 @@ export default function Contact() {
               </defs>
             </svg>
           </Link>
-          <Link href="mailto:marekstefaniak16@gmail.com" className="hover:scale-105 transition-transform">
+          <Link
+            href="mailto:marekstefaniak16@gmail.com"
+            className="hover:scale-105 transition-transform"
+          >
             <svg
               className="sm:w-12 sm:h-12 w-10 h-10"
               viewBox="0 0 48 48"

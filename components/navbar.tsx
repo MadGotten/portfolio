@@ -54,7 +54,7 @@ export default function Navbar({
           (section) =>
             section &&
             section.top <= window.innerHeight / 1.8 &&
-            section.bottom >= window.innerHeight / 1.8
+            section.bottom >= window.innerHeight / 1.8,
         );
         if (inView && activeLink !== `#${inView.id}`) {
           setActiveLink(`#${inView.id}`);

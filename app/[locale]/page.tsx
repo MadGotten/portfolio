@@ -7,11 +7,7 @@ import Contact from "@/components/contact";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 
-export default function Home({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default function Home({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const nav = useTranslations("Nav");
   return (

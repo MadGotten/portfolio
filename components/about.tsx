@@ -5,15 +5,9 @@ import { useTranslations } from "next-intl";
 export default function About() {
   const about = useTranslations("About");
   return (
-    <div
-      id="about"
-      className="flex flex-col items-center gap-8 pt-24"
-      data-section
-    >
+    <div id="about" className="flex flex-col items-center gap-8 pt-24" data-section>
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
-        <span className="px-4 rounded bg-green text-black">
-          {about("heading1")}
-        </span>
+        <span className="px-4 rounded bg-green text-black">{about("heading1")}</span>
         {about("heading2")}
       </h2>
       <div className="flex md:flex-row flex-col items-center gap-6">

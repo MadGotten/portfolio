@@ -34,9 +34,7 @@ export default function LocaleLayout({
   unstable_setRequestLocale(locale);
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body
-        className={`${poppins.className} dark:bg-dark dark:text-white bg-white text-black`}
-      >
+      <body className={`${poppins.className} dark:bg-dark dark:text-white bg-white text-black`}>
         <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
     </html>
