@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef } from "react";
-import { createPortal } from "react-dom";
+import { ArrowDownIcon } from "@/components/svg";
 
 export default function LoadProjects({
   btnText,
@@ -31,21 +31,7 @@ export default function LoadProjects({
         className="p-2 rounded bg-blue hover:bg-lightdark-blue text-black flex items-center gap-1"
       >
         {btnText}
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10.4998 4.16675V15.8334M10.4998 15.8334L16.3332 10.0001M10.4998 15.8334L4.6665 10.0001"
-            className="stroke-black"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <ArrowDownIcon />
       </button>
 
       {showAlert && (
