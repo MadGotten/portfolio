@@ -36,7 +36,7 @@ export default function LoadProjects({
 
       {showAlert && (
         <div
-          className={`fixed bottom-4 right-4 text-black bg-white dark:text-white dark:bg-black p-3 backdrop-blur rounded-lg border border-light bg-opacity-30 dark:bg-opacity-30 pointer-events-none animate-[appear_0.2s_ease-in]`}
+          className={`fixed bottom-4 right-4 text-black bg-white dark:text-white dark:bg-gray p-3 backdrop-blur rounded-lg border border-light-gray dark:border-dark-gray bg-opacity-90 dark:bg-opacity-90  pointer-events-none animate-[appear_0.2s_ease-in]`}
         >
           <span>{alertText}</span>
         </div>
