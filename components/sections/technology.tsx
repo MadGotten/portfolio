@@ -23,53 +23,12 @@ import {
   GitIcon,
   DockerIcon,
 } from "@/components/svg";
-import TechCategory from "@/components/tech-category";
+
+import TechStack from "@/components/tech-stack";
 
 export default function Technology() {
   const technology = useTranslations("Technology");
-  const languages = [
-    { Icon: PythonIcon, name: "Python" },
-    { Icon: JavascriptIcon, name: "Javascript" },
-    { Icon: PhpIcon, name: "PHP" },
-    [
-      { Icon: HtmlIcon, name: "HTML" },
-      { Icon: CssIcon, name: "CSS" },
-    ],
-    { Icon: SqlIcon, name: "SQL" },
-  ];
 
-  const frontend = [
-    [
-      { Icon: ReactIcon, name: "React" },
-      { Icon: NextjsIcon, name: "Next.js" },
-    ],
-    { Icon: TailwindIcon, name: "TailwindCSS" },
-    { Icon: BootstrapIcon, name: "Bootstrap" },
-    { Icon: SassIcon, name: "SASS" },
-  ];
-
-  const backend = [
-    [
-      { Icon: DjangoIcon, name: "Django" },
-      { Icon: DRFIcon, name: "DRF" },
-    ],
-    { Icon: FlaskIcon, name: "Flask" },
-    { Icon: ExpressjsIcon, name: "Express.js" },
-    { Icon: LaravelIcon, name: "Laravel" },
-    { Icon: MongodbIcon, name: "MongoDB" },
-    [
-      { Icon: MysqlIcon, name: "MySQL" },
-      { Icon: PostgresqlIcon, name: "PostgreSQL" },
-    ],
-    { Icon: FirebaseIcon, name: "Firebase" },
-  ];
-
-  const tools = [
-    [
-      { Icon: GitIcon, name: "Git" },
-      { Icon: DockerIcon, name: "Docker" },
-    ],
-  ];
   return (
     <div id="technology" className="flex flex-col items-center gap-8 pt-24" data-section>
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
@@ -93,10 +52,49 @@ export default function Technology() {
         </span>
       </h2>
       <div className="flex flex-col justify-start gap-8 w-full sm:w-fit md:text-xl md:font-medium xs:text-lg text-base font-normal">
-        <TechCategory title={technology("languages")} items={languages} />
-        <TechCategory title={technology("frontend")} items={frontend} />
-        <TechCategory title={technology("backend")} items={backend} />
-        <TechCategory title={technology("tools")} items={tools} row={true} />
+        <TechStack.List title={technology("languages")}>
+          <TechStack.Item Icon={PythonIcon} name="Python" />
+          <TechStack.Item Icon={JavascriptIcon} name="Javascript" />
+          <TechStack.Item Icon={PhpIcon} name="PHP" />
+          <TechStack.Group>
+            <TechStack.Item Icon={HtmlIcon} name="HTML" />
+            <TechStack.Item Icon={CssIcon} name="CSS" />
+          </TechStack.Group>
+          <TechStack.Item Icon={SqlIcon} name="SQL" />
+        </TechStack.List>
+
+        <TechStack.List title={technology("frontend")}>
+          <TechStack.Group>
+            <TechStack.Item Icon={ReactIcon} name="React" />
+            <TechStack.Item Icon={NextjsIcon} name="Next.js" />
+          </TechStack.Group>
+          <TechStack.Item Icon={TailwindIcon} name="TailwindCSS" />
+          <TechStack.Item Icon={BootstrapIcon} name="Bootstrap" />
+          <TechStack.Item Icon={SassIcon} name="SASS" />
+        </TechStack.List>
+
+        <TechStack.List title={technology("backend")}>
+          <TechStack.Group>
+            <TechStack.Item Icon={DjangoIcon} name="Django" />
+            <TechStack.Item Icon={DRFIcon} name="DRF" />
+          </TechStack.Group>
+          <TechStack.Item Icon={FlaskIcon} name="Flask" />
+          <TechStack.Item Icon={ExpressjsIcon} name="Express.js" />
+          <TechStack.Item Icon={LaravelIcon} name="Laravel" />
+          <TechStack.Item Icon={MongodbIcon} name="MongoDB" />
+          <TechStack.Group>
+            <TechStack.Item Icon={MysqlIcon} name="MySQL" />
+            <TechStack.Item Icon={PostgresqlIcon} name="PostgreSQL" />
+          </TechStack.Group>
+          <TechStack.Item Icon={FirebaseIcon} name="Firebase" />
+        </TechStack.List>
+
+        <TechStack.List title={technology("tools")}>
+          <TechStack.Group>
+            <TechStack.Item Icon={GitIcon} name="Git" />
+            <TechStack.Item Icon={DockerIcon} name="Docker" />
+          </TechStack.Group>
+        </TechStack.List>
       </div>
     </div>
   );
