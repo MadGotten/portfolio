@@ -30,3 +30,4 @@ export { default as MongodbIcon } from "./mongodb.svg";
 export { default as FirebaseIcon } from "./firebase.svg";
 export { default as GitIcon } from "./git.svg";
 export { default as DockerIcon } from "./docker.svg";
+export { default as LightningIcon } from "./lightning.svg";

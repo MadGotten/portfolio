@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import {
+  LightningIcon,
   PythonIcon,
   PhpIcon,
   HtmlIcon,
@@ -34,21 +35,7 @@ export default function Technology() {
       <h2 className="md:text-5xl sm:text-4xl text-3xl !leading-normal font-semibold w-fit flex gap-2">
         <span className="px-4 rounded bg-yellow text-black flex gap-2 items-center">
           {technology("heading")}
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M26 4L6 28H24L22 44L42 20H24L26 4Z"
-              className="stroke-black"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <LightningIcon />
         </span>
       </h2>
       <div className="flex flex-col justify-start gap-8 w-full sm:w-fit md:text-xl md:font-medium xs:text-lg text-base font-normal">
