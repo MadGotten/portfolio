@@ -12,6 +12,7 @@ import {
   BootstrapIcon,
   SassIcon,
   DjangoIcon,
+  DRFIcon,
   FlaskIcon,
   ExpressjsIcon,
   LaravelIcon,
@@ -50,15 +51,16 @@ export default function Technology() {
   const backend = [
     [
       { Icon: DjangoIcon, name: "Django" },
-      { Icon: FlaskIcon, name: "Flask" },
+      { Icon: DRFIcon, name: "DRF" },
     ],
+    { Icon: FlaskIcon, name: "Flask" },
     { Icon: ExpressjsIcon, name: "Express.js" },
     { Icon: LaravelIcon, name: "Laravel" },
+    { Icon: MongodbIcon, name: "MongoDB" },
     [
       { Icon: MysqlIcon, name: "MySQL" },
       { Icon: PostgresqlIcon, name: "PostgreSQL" },
     ],
-    { Icon: MongodbIcon, name: "MongoDB" },
     { Icon: FirebaseIcon, name: "Firebase" },
   ];
 

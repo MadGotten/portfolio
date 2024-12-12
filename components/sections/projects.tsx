@@ -45,13 +45,13 @@ export default function Projects() {
             className="flex gap-4 p-4 flex-col justify-between border border-light min-w-[270px] max-w-[362px] rounded-lg relative"
           >
             <div className="absolute -top-4 -right-4">
-              <div className="relative group flex justify-end items-center gap-2">
-                <div className="-left-8 top-0 bg-orange text-black w-fit text-nowrap text-sm px-2 leading-loose rounded-[10px] pointer-events-none select-none opacity-0 group-hover:opacity-100 transition-opacity">
-                  {t("tooltip-hosting")}
-                </div>
-                <button className="w-9 h-9 sm:w-8 sm:h-8 rounded-full bg-orange text-black flex justify-center items-center">
+              <div className="relative flex flex-row-reverse justify-end items-center gap-2">
+                <button className="w-9 h-9 sm:w-8 sm:h-8 rounded-full bg-orange text-black flex justify-center items-center peer">
                   <span className="font-medium select-none">!</span>
                 </button>
+                <div className="-left-8 top-0 bg-orange text-black w-fit text-nowrap text-sm px-2 leading-loose rounded-[10px] pointer-events-none select-none opacity-0 peer-hover:opacity-100  transition-opacity">
+                  {t("tooltip-hosting")}
+                </div>
               </div>
             </div>
             <div className="flex gap-2 flex-col">

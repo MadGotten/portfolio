@@ -20,6 +20,7 @@ export { default as JavascriptIcon } from "./javascript.svg";
 export { default as BootstrapIcon } from "./bootstrap.svg";
 export { default as SassIcon } from "./sass.svg";
 export { default as DjangoIcon } from "./django.svg";
+export { default as DRFIcon } from "./drf.svg";
 export { default as FlaskIcon } from "./flask.svg";
 export { default as ExpressjsIcon } from "./express-js.svg";
 export { default as LaravelIcon } from "./laravel.svg";
