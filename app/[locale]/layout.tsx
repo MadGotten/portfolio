@@ -8,6 +8,7 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600"],
   style: ["normal"],
   subsets: ["latin"],
+  preload: true,
 });
 
 export const metadata: Metadata = {
