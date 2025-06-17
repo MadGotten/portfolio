@@ -11,7 +11,7 @@
   "About": {
     "heading1": "O mnie",
     "heading2": "",
-    "paragraph": "Cześć! Jestem Marek. Jestem na 4. roku studiów inżynierskich na kierunku informatyka na <underscore>Uniwersytecie Merito</underscore>. Tworzę aplikacje w <underscore>Pythonie</underscore> oraz <underscore>Node.js</underscore>, skupiając się głównie na backendzie, ale w przyszłości chciałbym zostać full-stack developerem ✨",
+    "paragraph": "Cześć! Jestem Marek. Jestem absolwentem studiów inżynierskich na kierunku informatyki na <underscore>Uniwersytecie Merito</underscore>. Tworzę aplikacje w <underscore>Pythonie</underscore> oraz <underscore>Node.js</underscore>, skupiając się głównie na backendzie, ale w przyszłości chciałbym zostać full-stack developerem ✨",
     "download": "Pobierz CV"
   },
   "Projects": {
