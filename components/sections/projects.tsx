@@ -4,7 +4,7 @@ import socialLifeSrc from "@/public/social-life.webp";
 import eventioSrc from "@/public/eventio.webp";
 import tasksyncSrc from "@/public/tasksync.webp";
 import petsSrc from "@/public/pets.webp";
-import ProjectCard from "@/components/ui/project-card";
+import ProjectCard from "@/components/project-card";
 
 export default function Projects() {
   const t = useTranslations("Projects");

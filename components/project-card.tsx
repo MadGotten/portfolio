@@ -32,7 +32,11 @@ const ProjectCard = ({ project, t }: ProjectCardProps) => {
         </div>
       )}
       <div className="flex gap-2 flex-col">
-        <Link href={project.website} target="_blank">
+        <Link
+          href={project.website}
+          target="_blank"
+          aria-label={t("websitelinkLabel", { projectName: t(`${project.name}.title`) })}
+        >
           <Image
             src={project.src}
             alt={t(`${project.name}.imageAlt`)}
@@ -57,6 +61,7 @@ const ProjectCard = ({ project, t }: ProjectCardProps) => {
           href={project.github}
           target="_blank"
           className="w-10 h-10 hover:scale-110 transition-transform flex-shrink-0"
+          aria-label={t("githubLinkLabel", { projectName: t(`${project.name}.title`) })}
         >
           <GithubSmallIcon />
         </Link>

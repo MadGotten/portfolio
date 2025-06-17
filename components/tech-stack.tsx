@@ -12,7 +12,7 @@ type TechItemProps = {
 
 const TechList = ({ children, title }: TechListProps) => (
   <div className="flex flex-col justify-start gap-2">
-    <h4 className="md:text-2xl text-2xl font-semibold">{title}</h4>
+    <h3 className="md:text-2xl text-2xl font-semibold">{title}</h3>
     <div className="grid sm:grid-cols-3 grid-cols-1 gap-2">{children}</div>
   </div>
 );

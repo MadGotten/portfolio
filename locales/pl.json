@@ -41,6 +41,8 @@
       "body": "Aplikacja mobilna pozwala właścicielom tworzyć profile zwierząt, monitorować wizyty weterynaryjne i śledzić zdrowie swoich pupili. Umożliwia również udostępnianie profilu zwierzęcia innym użytkownikom.",
       "imageAlt": "Obraz aplikacji Pets"
     },
+    "websitelinkLabel": "Idź na stronę projektu {projectName}",
+    "githubLinkLabel": "Idź na stronę GitHub projektu {projectName}",
     "tooltip-hosting": "Hosting może urchamiać się do 1 minuty."
   },
   "Technology": {
@@ -53,6 +55,9 @@
   "Contact": {
     "heading1": "Kontakt",
     "heading2": "",
-    "text": "Jeśli masz jakiekolwiek pytania, skontaktuj się ze mną!"
+    "text": "Jeśli masz jakiekolwiek pytania, skontaktuj się ze mną!",
+    "linkedInLink": "Idz na profil LinkedIn",
+    "githubLink": "Idz na profil GitHub",
+    "emailLink": "Wyślij e-mail"
   }
 }

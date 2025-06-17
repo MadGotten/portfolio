@@ -41,6 +41,8 @@
       "body": "The mobile app allows owners to create pets profiles, monitor their veterinary visits, and track their pet's health. It allows users to share their pet's profile with others.",
       "imageAlt": "Image of Pets app"
     },
+    "websitelinkLabel": "Go to project {projectName} website",
+    "githubLinkLabel": "Go to github of project {projectName}",
     "tooltip-hosting": "Hosting might spin up to 1 min."
   },
   "Technology": {
@@ -53,6 +55,9 @@
   "Contact": {
     "heading1": "Contact",
     "heading2": "Me",
-    "text": "Feel free to contact me if you have any questions!"
+    "text": "Feel free to contact me if you have any questions!",
+    "linkedInLink": "Go to LinkedIn profile",
+    "githubLink": "Go to GitHub",
+    "emailLink": "Send an email"
   }
 }
