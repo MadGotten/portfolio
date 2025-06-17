@@ -31,9 +31,12 @@
       "body": "Strona do zarządzania wydarzeniami, która umożliwia rejestrację lub zakup biletów. Twórcy wydarzeń mogą określić, czy ich wydarzenie jest bezpłatne, czy płatne.",
       "imageAlt": "Image of Eventio website"
     },
-    "show-more": "Pokaż więcej",
-    "tooltip-hosting": "Hosting może urchamiać się do 1 minuty.",
-    "alert-text": "Aktualnie nie ma więcej projektów 😭"
+    "tasksync": {
+      "title": "Tasksync",
+      "body": "Aplikacja umożliwia użytkownikom tworzenie tablic Kanban z pełną obsługą operacji CRUD dla zadań i list oraz funkcją drag and drop. Użytkownicy mogą również zapraszać innych do swojej tablicy, aby wspólnie pracować nad zadaniami.",
+      "imageAlt": "Image of TaskSync website"
+    },
+    "tooltip-hosting": "Hosting może urchamiać się do 1 minuty."
   },
   "Technology": {
     "heading": "Technologie",

@@ -31,9 +31,12 @@
       "body": "An event management website that allows people to register or buy tickets. Event creators can specify if their event is free or paid.",
       "imageAlt": "Image of Eventio website"
     },
-    "show-more": "Show more",
-    "tooltip-hosting": "Hosting might spin up to 1 min.",
-    "alert-text": "Currently no more projects 😭"
+    "tasksync": {
+      "title": "Tasksync",
+      "body": "The app lets users create a Kanban board with full CRUD operations for tasks and lists with drag and drop. Users can also invite others to their board to collaborate on tasks.",
+      "imageAlt": "Image of TaskSync website"
+    },
+    "tooltip-hosting": "Hosting might spin up to 1 min."
   },
   "Technology": {
     "heading": "Technology",
