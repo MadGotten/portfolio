@@ -33,6 +33,7 @@ export default function Navlink({
       className={`${variantHover[color]} ${
         isActive ? activeStyle : ""
       } hover:text-black px-1 rounded font-medium transition-transform ease-in-out duration-150 hover:scale-110`}
+      aria-label={text}
     >
       {text}
     </Link>

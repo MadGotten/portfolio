@@ -45,10 +45,10 @@ export default function NavbarMobile({
       style={{ height: isMenuOpen ? "272px" : "24px" }}
     >
       <div className="flex justify-between">
-        <Link href="#home">
+        <Link href="#home" aria-label="Home">
           <HomeIcon />
         </Link>
-        <button onClick={toggleMenu}>
+        <button onClick={toggleMenu} aria-label="Menu">
           <MenuIcon />
         </button>
       </div>
