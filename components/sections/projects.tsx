@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
-import idlepartsSrc from "@/public/idleparts.png";
-import socialLifeSrc from "@/public/social-life.png";
-import eventioSrc from "@/public/eventio.png";
-import tasksyncSrc from "@/public/tasksync.png";
-import petsSrc from "@/public/pets.png";
+import idlepartsSrc from "@/public/idleparts.webp";
+import socialLifeSrc from "@/public/social-life.webp";
+import eventioSrc from "@/public/eventio.webp";
+import tasksyncSrc from "@/public/tasksync.webp";
+import petsSrc from "@/public/pets.webp";
 import ProjectCard from "@/components/ui/project-card";
 
 export default function Projects() {
