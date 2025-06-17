@@ -3,6 +3,7 @@ import idlepartsSrc from "@/public/idleparts.png";
 import socialLifeSrc from "@/public/social-life.png";
 import eventioSrc from "@/public/eventio.png";
 import tasksyncSrc from "@/public/tasksync.png";
+import petsSrc from "@/public/pets.png";
 import ProjectCard from "@/components/ui/project-card";
 
 export default function Projects() {
@@ -38,6 +39,14 @@ export default function Projects() {
       website: "https://tasksync.madgotten.me",
       github: "https://github.com/MadGotten/Tasksync",
       stack: ["Java", "Spring Boot", "React", "PostgreSQL", "Keycloak"],
+    },
+    {
+      name: "pets",
+      src: petsSrc,
+      website: "https://github.com/MadGotten/Praca_inzynierska",
+      github: "https://github.com/MadGotten/Praca_inzynierska",
+      stack: ["Django REST Framework", "React Native", "JWT", "PostgreSQL"],
+      containImg: true,
     },
   ];
 

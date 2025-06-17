@@ -36,6 +36,11 @@
       "body": "The app lets users create a Kanban board with full CRUD operations for tasks and lists with drag and drop. Users can also invite others to their board to collaborate on tasks.",
       "imageAlt": "Image of TaskSync website"
     },
+    "pets": {
+      "title": "Pets",
+      "body": "The mobile app allows owners to create pets profiles, monitor their veterinary visits, and track their pet's health. It allows users to share their pet's profile with others.",
+      "imageAlt": "Image of Pets app"
+    },
     "tooltip-hosting": "Hosting might spin up to 1 min."
   },
   "Technology": {

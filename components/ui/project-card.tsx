@@ -10,6 +10,7 @@ type ProjectCardProps = {
     github: string;
     stack: string[];
     slowHost?: boolean;
+    containImg?: boolean;
   };
   t: any;
 };
@@ -38,7 +39,7 @@ const ProjectCard = ({ project, t }: ProjectCardProps) => {
             style={{
               width: "100%",
               height: "200px",
-              objectFit: "cover",
+              objectFit: project.containImg ? "contain" : "cover",
             }}
           ></Image>
         </Link>
