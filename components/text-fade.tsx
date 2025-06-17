@@ -13,7 +13,8 @@ export function TextFade({
 }) {
   const FADE = {
     show: { opacity: 1, y: 0, transition: { type: "spring", damping: 15 } },
-    hidden: { opacity: 0, y: 18 },
+    // Opacity must be above 0 to avoid LCP issues with render delay
+    hidden: { opacity: 0.001, y: 18 },
   };
   return (
     <motion.div
