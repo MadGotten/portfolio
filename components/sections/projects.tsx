@@ -14,6 +14,7 @@ export default function Projects() {
       website: "https://idleparts.madgotten.me",
       github: "https://github.com/MadGotten/idleparts",
       stack: ["Express.js", "React", "MongoDB"],
+      slowHost: true,
     },
     {
       name: "social-life",
@@ -21,6 +22,7 @@ export default function Projects() {
       website: "https://social-life.madgotten.me",
       github: "https://github.com/MadGotten/Social-Life",
       stack: ["Flask", "HTMX"],
+      slowHost: true,
     },
     {
       name: "eventio",
@@ -28,6 +30,7 @@ export default function Projects() {
       website: "https://eventio.madgotten.me",
       github: "https://github.com/MadGotten/Eventio",
       stack: ["Django", "HTMX", "Alpine.js", "PostgreSQL"],
+      slowHost: true,
     },
     {
       name: "tasksync",

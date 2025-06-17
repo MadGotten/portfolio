@@ -9,6 +9,7 @@ type ProjectCardProps = {
     website: string;
     github: string;
     stack: string[];
+    slowHost?: boolean;
   };
   t: any;
 };
@@ -16,16 +17,19 @@ type ProjectCardProps = {
 const ProjectCard = ({ project, t }: ProjectCardProps) => {
   return (
     <div className="flex gap-4 p-4 flex-col justify-between border border-light min-w-[270px] max-w-[340px] xl:max-w-[362px] rounded-lg relative">
-      <div className="absolute -top-4 -right-4">
-        <div className="relative flex flex-row-reverse justify-end items-center gap-2">
-          <button className="w-9 h-9 sm:w-8 sm:h-8 rounded-full bg-yellow text-black flex justify-center items-center peer">
-            <span className="font-medium select-none">!</span>
-          </button>
-          <div className="-left-8 top-0 bg-yellow text-black w-fit text-nowrap text-sm px-2 leading-loose rounded-[10px] pointer-events-none select-none opacity-0 peer-hover:opacity-100  transition-opacity">
-            {t("tooltip-hosting")}
+      {project.slowHost && (
+        <div className="absolute -top-4 -right-4">
+          <div className="relative flex flex-row-reverse justify-end items-center gap-2">
+            <button className="w-9 h-9 sm:w-8 sm:h-8 rounded-full bg-yellow text-black flex justify-center items-center peer">
+              <span className="font-medium select-none">!</span>
+            </button>
+
+            <div className="-left-8 top-0 bg-yellow text-black w-fit text-nowrap text-sm px-2 leading-loose rounded-[10px] pointer-events-none select-none opacity-0 peer-hover:opacity-100  transition-opacity">
+              {t("tooltip-hosting")}
+            </div>
           </div>
         </div>
-      </div>
+      )}
       <div className="flex gap-2 flex-col">
         <Link href={project.website} target="_blank">
           <Image
