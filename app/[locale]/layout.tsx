@@ -16,7 +16,33 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  authors: [{ name: "Marek Stefaniak" }],
   description: "Portfolio website by Marek Stefaniak",
+  keywords: [
+    "Marek Stefaniak",
+    "Portfolio",
+    "Backend Developer",
+    "Software Engineer",
+    "Python",
+    "Django",
+    "FastAPI",
+  ],
+  openGraph: {
+    title: "Marek Stefaniak",
+    description: "Portfolio website by Marek Stefaniak",
+    url: "https://madgotten.me",
+    siteName: "Marek Stefaniak Portfolio",
+    images: [
+      {
+        url: "https://madgotten.me/favicon.ico",
+        width: 256,
+        height: 256,
+        alt: "Marek Stefaniak Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 const locales = ["en", "pl"];
