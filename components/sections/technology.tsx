@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import {
   LightningIcon,
   PythonIcon,
-  PhpIcon,
+  JavaIcon,
   HtmlIcon,
   CssIcon,
   SqlIcon,
@@ -16,13 +16,14 @@ import {
   DRFIcon,
   FlaskIcon,
   ExpressjsIcon,
-  LaravelIcon,
+  SpringIcon,
   MysqlIcon,
   PostgresqlIcon,
   MongodbIcon,
   FirebaseIcon,
   GitIcon,
   DockerIcon,
+  FastApiIcon,
 } from "@/components/svg";
 
 import TechStack from "@/components/tech-stack";
@@ -42,7 +43,7 @@ export default function Technology() {
         <TechStack.List title={technology("languages")}>
           <TechStack.Item Icon={PythonIcon} name="Python" />
           <TechStack.Item Icon={JavascriptIcon} name="Javascript" />
-          <TechStack.Item Icon={PhpIcon} name="PHP" />
+          <TechStack.Item Icon={JavaIcon} name="Java" />
           <TechStack.Group>
             <TechStack.Item Icon={HtmlIcon} name="HTML" />
             <TechStack.Item Icon={CssIcon} name="CSS" />
@@ -52,7 +53,7 @@ export default function Technology() {
 
         <TechStack.List title={technology("frontend")}>
           <TechStack.Group>
-            <TechStack.Item Icon={ReactIcon} name="React" />
+            <TechStack.Item Icon={ReactIcon} name="React/Native" />
             <TechStack.Item Icon={NextjsIcon} name="Next.js" />
           </TechStack.Group>
           <TechStack.Item Icon={TailwindIcon} name="TailwindCSS" />
@@ -65,9 +66,12 @@ export default function Technology() {
             <TechStack.Item Icon={DjangoIcon} name="Django" />
             <TechStack.Item Icon={DRFIcon} name="DRF" />
           </TechStack.Group>
-          <TechStack.Item Icon={FlaskIcon} name="Flask" />
+          <TechStack.Item Icon={SpringIcon} name="Spring Boot" />
+          <TechStack.Group>
+            <TechStack.Item Icon={FlaskIcon} name="Flask" />
+            <TechStack.Item Icon={FastApiIcon} name="FastAPI" />
+          </TechStack.Group>
           <TechStack.Item Icon={ExpressjsIcon} name="Express.js" />
-          <TechStack.Item Icon={LaravelIcon} name="Laravel" />
           <TechStack.Item Icon={MongodbIcon} name="MongoDB" />
           <TechStack.Group>
             <TechStack.Item Icon={MysqlIcon} name="MySQL" />
