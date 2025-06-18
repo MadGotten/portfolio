@@ -4,12 +4,21 @@ import NavbarDesktop from "@/components/navbar/navbar-desktop";
 import NavbarMobile from "@/components/navbar/navbar-mobile";
 
 export default function Navbar() {
+  const mount = useRef<boolean>(false);
   const [activeLink, setActiveLink] = useState<string>("#home");
   const [scrolling, setScrolling] = useState<boolean>(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | number>(0);
 
-  const handleClick = (href: string) => {
-    setActiveLink(href);
+  const handleClick = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    setActiveLink(sectionId);
     setScrolling(true);
     clearTimeout(timeoutRef.current);
     const timeoutId = setTimeout(() => {
@@ -46,11 +55,17 @@ export default function Navbar() {
             section.top <= window.innerHeight / 1.8 &&
             section.bottom >= window.innerHeight / 1.8,
         );
-        if (inView && activeLink !== `#${inView.id}`) {
-          setActiveLink(`#${inView.id}`);
+        if (inView && activeLink !== inView.id) {
+          setActiveLink(inView.id);
         }
       }
     };
+    // Set intial active link only on mount
+    if (!mount.current) {
+      mount.current = true;
+      handleScroll();
+    }
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {

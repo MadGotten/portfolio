@@ -1,14 +1,10 @@
-import Link from "next/link";
-
-export default function Navlink({
+export default function NavlinkItem({
   text,
-  href,
   color = "green",
   isActive,
   handleClick,
 }: {
   text: string;
-  href: string;
   color: string;
   isActive: boolean;
   handleClick: () => void;
@@ -27,15 +23,15 @@ export default function Navlink({
   };
   const activeStyle = `${variant[color]} text-black scale-110`;
   return (
-    <Link
+    <button
+      type="button"
       onClick={handleClick}
-      href={href}
       className={`${variantHover[color]} ${
         isActive ? activeStyle : ""
       } hover:text-black px-1 rounded font-medium transition-transform ease-in-out duration-150 hover:scale-110`}
       aria-label={text}
     >
       {text}
-    </Link>
+    </button>
   );
 }
