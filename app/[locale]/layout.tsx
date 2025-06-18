@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { setRequestLocale } from "next-intl/server";
 import { useMessages, NextIntlClientProvider } from "next-intl";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -73,6 +74,7 @@ export default function LocaleLayout({
         <NextIntlClientProvider messages={pickedMessages} locale={locale}>
           <ThemeProvider attribute="class">{children}</ThemeProvider>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
