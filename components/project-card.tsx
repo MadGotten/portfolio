@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { GithubSmallIcon } from "@/components/svg";
+import { useTranslations } from "next-intl";
 
 type ProjectCardProps = {
   project: {
@@ -12,10 +13,10 @@ type ProjectCardProps = {
     slowHost?: boolean;
     containImg?: boolean;
   };
-  t: any;
 };
 
-const ProjectCard = ({ project, t }: ProjectCardProps) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
+  const t = useTranslations("Projects");
   return (
     <div className="flex gap-4 p-4 flex-col justify-between border border-light min-w-[270px] max-w-[340px] xl:max-w-[362px] rounded-lg relative">
       {project.slowHost && (

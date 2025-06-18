@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="flex items-stretch justify-center dark:text-white text-black">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-8">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} t={t} />
+            <ProjectCard key={index} project={project} />
           ))}
         </div>
       </div>
