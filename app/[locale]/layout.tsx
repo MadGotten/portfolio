@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { useMessages, NextIntlClientProvider } from "next-intl";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -58,10 +59,20 @@ export default function LocaleLayout({
   params: { locale: string };
 }) {
   unstable_setRequestLocale(locale);
+  const messages = useMessages();
+
+  // Current impl for selecting client translations
+  // TODO: change this when tree shaking is implemented in next-intl
+  const pickedMessages = {
+    Nav: messages["Nav"],
+  };
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${poppins.className} dark:bg-dark dark:text-white bg-white text-black`}>
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+        <NextIntlClientProvider messages={pickedMessages} locale={locale}>
+          <ThemeProvider attribute="class">{children}</ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

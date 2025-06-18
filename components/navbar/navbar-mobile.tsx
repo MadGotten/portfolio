@@ -5,22 +5,16 @@ import Link from "next/link";
 import ThemeToggle from "../ui/theme-toggle";
 import LanguageSwitch from "../ui/language-switch";
 import { HomeIcon, MenuIcon } from "@/components/svg";
+import { useTranslations } from "next-intl";
 
 export default function NavbarMobile({
-  about,
-  projects,
-  technology,
-  contact,
   activeLink,
   handleClick,
 }: {
-  about: string;
-  projects: string;
-  technology: string;
-  contact: string;
   activeLink: string;
   handleClick: (href: string) => void;
 }) {
+  const t = useTranslations("Nav");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -58,28 +52,28 @@ export default function NavbarMobile({
             isActive={activeLink === "#about"}
             handleClick={() => handleClick("#about")}
             href="#about"
-            text={about}
+            text={t("about")}
             color="green"
           />
           <Navlink
             isActive={activeLink === "#projects"}
             handleClick={() => handleClick("#projects")}
             href="#projects"
-            text={projects}
+            text={t("projects")}
             color="blue"
           />
           <Navlink
             isActive={activeLink === "#technology"}
             handleClick={() => handleClick("#technology")}
             href="#technology"
-            text={technology}
+            text={t("technology")}
             color="yellow"
           />
           <Navlink
             isActive={activeLink === "#contact"}
             handleClick={() => handleClick("#contact")}
             href="#contact"
-            text={contact}
+            text={t("contact")}
             color="pink"
           />
           <div className="flex gap-6">
