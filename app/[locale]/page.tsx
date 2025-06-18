@@ -4,10 +4,10 @@ import About from "@/components/sections/about";
 import Projects from "@/components/sections/projects";
 import Technology from "@/components/sections/technology";
 import Contact from "@/components/sections/contact";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   return (
     <main className="2xl:container mx-auto px-6 2xl:p-0 relative">
       <Navbar />
