@@ -49,12 +49,20 @@ export default function Navbar() {
           })
           .filter(Boolean);
 
-        const inView = offsets.find(
-          (section) =>
-            section &&
-            section.top <= window.innerHeight / 1.8 &&
-            section.bottom >= window.innerHeight / 1.8,
-        );
+        const inView = offsets.find((section) => {
+          if (!section) return false;
+
+          // First and last sections must have diffrent window height thresholds
+          if (section.id === "about" || section.id === "contact") {
+            return (
+              section.top <= window.innerHeight / 1.5 && section.bottom >= window.innerHeight / 3
+            );
+          }
+
+          return (
+            section.top <= window.innerHeight / 1.8 && section.bottom >= window.innerHeight / 1.8
+          );
+        });
         if (inView && activeLink !== inView.id) {
           setActiveLink(inView.id);
         }
