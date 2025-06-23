@@ -32,7 +32,7 @@ export default function Contact() {
             <GithubIcon />
           </Link>
           <Link
-            href="mailto:marekstefaniak16@gmail.com"
+            href="mailto:marekstefaniak.dev@gmail.com"
             className="hover:scale-105 transition-transform"
             aria-label={t("emailLink")}
           >
