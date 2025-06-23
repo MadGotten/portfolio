@@ -18,10 +18,14 @@ export default function About() {
               underscore: (chunks) => <u>{chunks}</u>,
             })}
           </p>
-          <button className="flex bg-green hover:bg-dark-green transition-colors gap-1 p-2 text-black rounded text-base w-fit">
+          <a
+            href="/Marek_Stefaniak_CV.pdf"
+            className="flex bg-green hover:bg-dark-green transition-colors gap-1 p-2 text-black rounded text-base w-fit"
+            download
+          >
             {about("download")}
             <DownloadIcon />
-          </button>
+          </a>
         </div>
         <div className="lg:h-[400px] lg:w-[300px] lg:max-h-[400px] lg:max-w-[300px] max-h-[300px] max-w-[236px] xs:h-[300px] xs:w-[236px] xs:min-h-[300px] xs:min-w-[236px] mr-6 lg:mr-0">
           <Image
