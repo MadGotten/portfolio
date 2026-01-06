@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://madgotten.me/sitemap.xml",
+    sitemap: "https://madgotten.com/sitemap.xml",
   };
 }

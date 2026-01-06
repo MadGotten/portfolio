@@ -12,7 +12,7 @@ export default function Projects() {
     {
       name: "idleparts",
       src: idlepartsSrc,
-      website: "https://idleparts.madgotten.me",
+      website: "https://idleparts.madgotten.com",
       github: "https://github.com/MadGotten/idleparts",
       stack: ["Express.js", "React", "MongoDB"],
       slowHost: true,
@@ -20,7 +20,7 @@ export default function Projects() {
     {
       name: "social-life",
       src: socialLifeSrc,
-      website: "https://social-life.madgotten.me",
+      website: "https://social-life.madgotten.com",
       github: "https://github.com/MadGotten/Social-Life",
       stack: ["Flask", "HTMX"],
       slowHost: true,
@@ -28,7 +28,7 @@ export default function Projects() {
     {
       name: "eventio",
       src: eventioSrc,
-      website: "https://eventio.madgotten.me",
+      website: "https://eventio.madgotten.com",
       github: "https://github.com/MadGotten/Eventio",
       stack: ["Django", "HTMX", "Alpine.js", "PostgreSQL"],
       slowHost: true,
@@ -36,7 +36,7 @@ export default function Projects() {
     {
       name: "tasksync",
       src: tasksyncSrc,
-      website: "https://tasksync.madgotten.me",
+      website: "https://tasksync.madgotten.com",
       github: "https://github.com/MadGotten/Tasksync",
       stack: ["Java", "Spring Boot", "React", "PostgreSQL", "Keycloak"],
     },
